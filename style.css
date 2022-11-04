@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.header {
+    margin-top: 30px;
+}
+
+.wrapper {
+    margin: 0 30px;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: none;
+    list-style: none;
+    gap: 28px;
+}
+
+.header__list-item {
+    color: #555555;
+}
+
+.header__list-item-mod {
+    color: #FF3998;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero__text {
+    padding-top: 40px;
+    width: 288px;
+}
+
+.hero__status {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF3998;
+}
+
+.hero__title {
+    margin: 0;
+}
+
+.hero__paragraph {
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.hero__button-container {
+    width: 150px;
+    background-image: url(/assets/background.svg);
+    background-size: cover;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+.hero__button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.hero__button:hover {
+    color: #555555;
+}
+
+.hero__image {
+    max-height: 278px;
+    position: absolute;
+    bottom: 30px;
+    left: -30px;
+}
+
+.upsell {
+    background-image: url(/assets/background.svg);
+    background-size: cover;
+    padding: 50px 20px 20px 20px;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.upsell__container {
+    margin: 0;
+}
+
+.upsell__title {
+    font-weight: bolder;
+}
+
+.press {
+    width: 100%;
+    padding: 40px 0 40px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.press__logo {
+    width: calc(50% - 20px);
+    max-height: 40px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        margin: 0 50px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__list {
+        display: flex;
+    }
+
+    .hero {
+        display: flex;
+        margin: 0 0 0 50px;
+    }
+
+    .hero__text {
+        flex: 1;
+        padding-top: 50px;
+    }
+
+    .hero__title {
+        font-size: 96px;
+    }
+
+    .hero__paragraph {
+        color: #555555;
+        min-width: 65%;
+    }
+
+    .hero__image {
+        position: relative;
+        flex: 1;
+        min-height: 519px;
+    }
+
+    .upsell {
+        background-image: none;
+        padding: 0;
+    }
+
+    .upsell__container {
+        background-image: url(/assets/background.svg);
+        background-size: cover;
+        padding: 100px 50px 40px 50px;
+        border-radius: 10px;
+    }
+
+    .press {
+        padding: 80px 0 80px 0;
+        justify-content: space-between;
+    }
+
+    .press__logo {
+        width: initial;
+    }
+}
