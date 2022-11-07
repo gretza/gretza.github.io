@@ -418,6 +418,7 @@ body {
     .footer__bottom {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 40px;
     }
 
     .footer__bottom span:nth-child(2) {
