@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 html,
@@ -89,8 +89,8 @@ body {
 
 .hero__image {
     position: absolute;
-    bottom: 30px;
-    left: 220px;
+    bottom: 85px;
+    left: 200px;
 }
 
 .hero__nft {
@@ -121,13 +121,13 @@ body {
     padding: 40px 0 40px 0;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 52px;
+    column-gap: 44px;
     row-gap: 15px;
     align-items: center;
 }
 
 .press__logo {
-    width: calc(50% - 26px);
+    width: calc(50% - 22px);
     min-height: 40px;
 }
 
@@ -210,6 +210,8 @@ body {
 
 .footer {
     position: relative;
+    overflow: hidden;
+    margin-right: 0;
 }
 
 .footer__text {
@@ -219,8 +221,8 @@ body {
 
 .footer__image {
     position: absolute;
-    left: 200px;
-    top: 30px;
+    left: 170px;
+    top: 105px;
 }
 
 .footer__nft {
@@ -230,8 +232,64 @@ body {
 .footer__container {
     padding-top: 30px;
     border-top: 2px solid rgba(128, 128, 128, 0.2);
-    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
 }
+
+.footer__paragraph {
+    color: #555555;
+    font-size: 20px;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.footer__list-item {
+    color: #999999;
+}
+
+.footer__icon {
+    height: 18px;
+    color: #999999;
+
+}
+
+.footer-right * {
+    color: #555555;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+}
+
+.footer-right p {
+    font-size: 20px;
+}
+
+.footer-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.footer__bottom {
+    margin-top: 30px;
+    margin-bottom: 80px; 
+}
+
+.footer__bottom span {
+    color: #999999;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer__bottom span:nth-child(2) {
+    display: none;
+}
+
 
 @media screen and (min-width: 768px) {
     .wrapper {
@@ -304,6 +362,7 @@ body {
 
     .footer__container {
         border: none;
+        padding: 0;
     }
 
     .footer {
@@ -320,8 +379,44 @@ body {
     }
 
     .footer__nft {
-        height: 100%;
+        height: 80%;
         text-align: center;
+        position: absolute;
+        bottom: 0px;
     }
 
+    .footer__logo {
+        padding-top: 30px;
+    }
+
+    .footer__container .wrapper {
+        padding-top: 30px;
+        border-top: 2px solid rgba(128, 128, 128, 0.2);
+    }
+
+    .footer-main {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .footer-right {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .footer-left {
+        flex: 1;
+    }
+
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__bottom span:nth-child(2) {
+        display: initial;
+    }
 }
